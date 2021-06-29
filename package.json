@@ -1,0 +1,48 @@
+{
+  "name": "deepvault",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "description": "Safely store data in the browser with AES encryption",
+  "module": "dist/index.es.js",
+  "jsnext:main": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "author": "DoneDeal <talktonoirempire[@].gmail[.]com>",
+  "scripts": {
+    "build": "rimraf dist && mkdirp dist && rollup -c"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DoneDeal0/DeepVault"
+  },
+  "homepage": "https://github.com/DoneDeal0/DeepVault",
+  "keywords": [
+    "local storage",
+    "local-storage",
+    "jwe",
+    "react",
+    "vue",
+    "encryption",
+    "security",
+    "crypto",
+    "cryptography",
+    "A256GCM",
+    "A256",
+    "AES",
+    "cyphering",
+    "encrypt"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "mkdirp": "^1.0.4",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.52.3",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "typescript": "^4.3.4"
+  }
+}
