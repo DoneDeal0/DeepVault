@@ -103,7 +103,7 @@ import { userVault } from "./vaults";
 |deleteData |`() => void` |Delete data.  |
 |encryptAndSaveData |`(data: any) => void`|Encrypt and save data|
 |getEncryptedData |`() => string`|Get data without decrypting it. Useful to check the existence of an item without any need to access its information.|
-|getDecryptedData |`() => Promise<string>`|Get decrypted data.|
+|getDecryptedData |`() => Promise<any>`|Get decrypted data.|
 |updateData |`(data: any) => Promise<string>`|Update an item already encrypted and saved. This method will replace the former data with the new one.|
 
 ## CONTRIBUTING
