@@ -4,14 +4,19 @@
 
 ## WHAT IS IT?
 
-**DeepVault** allows you to safely store data in the browser with AES encryption.
+**DeepVault** allows you to store data in the browser with AES encryption.
 
 ## MOTIVATION
-Storing data in the browser is very convenient, but not secure. It can be fixed by only storing it in an internal volatile state that gets erased once the user closes the app or refreshes the page. This technique offers a good level of security but necessitate to repeat api calls to retrieve the same data each time a user launches your app.  
+Storing data in the browser is very convenient, but not secure. Thanks to **DeepVault**, you can now directly encrypt sensitive data (geolocation, email, etc.), in your browser and access it with a cryptographic key as if you were using good old local storage.  
 
-Thanks to **DeepVault**, you can now directly encrypt sensitive data (geolocation, email, etc.), in your browser and access it with a cryptographic key as if you were using good old local storage.  
+## SECURITY
+By nature, **DeepVault** is not completely secure since it only provide security through obfuscation. But albeit it won't stop a determined hacker, it will mitigate the vast majority of automated attacks. Please weight up the pros and cons and design your app carefully. 
 
-  
+You can learn more about Advanced Encryption Standard and Galois Counter Mode here:
+ - https://en.wikipedia.org/wiki/Galois/Counter_Mode
+ - https://fr.wikipedia.org/wiki/Advanced_Encryption_Standard
+
+
 ### features:
 - Save, read, update and delete encrypted data in the browser.
 - Supports Typescript.
@@ -108,13 +113,6 @@ import { userVault } from "./vaults";
 
 ## CONTRIBUTING
 Feel free to send your pull requests or to raise issues on the github repository.
-
-## SECURITY
-Albeit **DeepVault** should bring a good level of security to the persistent data stored in your users' browsers, it may not be immune to all attacks. Please weight up the pros and cons and design your app carefully. 
-
-You can learn more about Advanced Encryption Standard and Galois Counter Mode here:
- - https://en.wikipedia.org/wiki/Galois/Counter_Mode
- - https://fr.wikipedia.org/wiki/Advanced_Encryption_Standard
 
 ## CREDITS
 DoneDeal0
